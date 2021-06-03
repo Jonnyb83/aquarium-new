@@ -3,7 +3,12 @@
 }
 body {
   margin: auto;
-  background-color: rgba(230, 220, 220, 0.795);
+  background: linear-gradient(
+    90deg,
+    rgba(147, 236, 127, 1) 16%,
+    rgba(70, 186, 29, 1) 46%,
+    rgba(161, 238, 161, 1) 85%
+  );
   max-width: 1600px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
@@ -76,13 +81,14 @@ header:hover {
 }
 
 .slideshow {
-  height: 300px;
+  height: auto;
   background: linear-gradient(
     90deg,
     rgba(7, 85, 4, 1) 1%,
     rgba(22, 235, 10, 1) 46%,
     rgba(14, 145, 20, 1) 99%
   );
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 700px) {
@@ -110,11 +116,21 @@ div.description {
 }
 
 .gallery {
+  height: auto;
+  margin-top: 30px;
+  margin: 0 0 20px 20px;
   padding: 10px 16px;
   padding-left: 70px;
   width: 100%;
-  margin: auto;
-  justify-content: space-between;
+  display: ;
+  /* justify-content: space-evenly; */
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -122,7 +138,7 @@ div.description {
   width: 300px;
   height: 350px;
   perspective: 1000px;
-  display: inline-block;
+  padding: 10px;
 }
 
 .flip-card {
@@ -195,22 +211,19 @@ div.description {
   box-shadow: darkgreen;
 }
 
-.fishes {
+.fish {
   background: linear-gradient(
     90deg,
     rgba(50, 20, 233, 0.95) 1%,
     rgba(10, 215, 235, 0.95) 58%,
     rgba(67, 123, 232, 0.95) 99%
   );
-  margin: auto;
-  justify-content: center;
-  justify-items: normal;
-  display: flex;
+  margin-top: 300px;
+  display: block;
   cursor: pointer;
   /*display:inline-block;*/
   color: #fff;
   font-size: 1rem;
-  justify-items: space-between;
   border: 1px solid #bbb;
 }
 
@@ -229,7 +242,19 @@ div.description {
   height: 700px;
 }
 
-.video {
+.slideshow {
+  width: auto;
+  height: auto;
+}
+
+.card-slides {
+  height: 150px;
+  width: 1600px;
+}
+
+.slide {
+  height: 50vh;
+  width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -242,5 +267,15 @@ div.description {
 @media only screen and (max-width: 500px) {
   .gallery {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .gallery {
+    width: 100%;
+  }
+  .video-angelfish {
+    width: 100%;
+    height: auto;
   }
 }
