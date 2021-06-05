@@ -242,9 +242,9 @@ div.description {
   height: 700px;
 }
 
-.slideshow {
-  width: auto;
-  height: auto;
+.slide {
+  width: 1600px;
+  height: 350px;
 }
 
 .card-slides {
