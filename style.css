@@ -178,21 +178,27 @@ div.description {
 .card-back {
   background: linear-gradient(
     90deg,
-    rgba(7, 85, 4, 1) 1%,
-    rgba(22, 235, 10, 1) 46%,
-    rgba(14, 145, 20, 1) 99%
+    rgba(50, 20, 233, 1) 1%,
+    rgba(10, 215, 235, 1) 58%,
+    rgba(67, 123, 232, 1) 99%
   );
 
-  color: white;
+  color: darkblue;
   transform: rotateY(180deg);
 }
 
 .button {
-  background: green;
+  background: linear-gradient(
+    90deg,
+    rgb(22, 8, 114) 1%,
+    rgba(10, 215, 235, 1) 58%,
+    rgb(40, 87, 180) 99%
+  );
   border-radius: 3px;
-  border: rgb(2, 85, 2);
+  border: rgb(5, 1, 41);
   margin-top: 50px;
-  color: white;
+  color: darkblue;
+  font-weight: 700;
   text-decoration: solid;
   padding: 15px 32px;
   text-align: center;
@@ -247,6 +253,22 @@ div.description {
   height: 350px;
 }
 
+.zone-yellow {
+  height: 150px;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 85, 4, 1) 1%,
+    rgba(22, 235, 10, 1) 46%,
+    rgba(14, 145, 20, 1) 99%
+  );
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
 .card-slides {
   height: 150px;
   width: 1600px;
@@ -255,6 +277,98 @@ div.description {
 .slide {
   height: 50vh;
   width: 100%;
+}
+
+/* MODAL WINDOW FROM W3SHOOLS */
+
+/* The Modal (background) */
+.modal-card {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  align-self: center;
+  z-index: 4; /* Sit on top */
+  margin: 100px 100px 100px 100px;
+  padding-top: 30px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 90vw; /* Full width */
+  height: 500px /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: lightblue;
+  color: darkblue;
+  border-radius: 5px;
+  
+}
+
+/* Modal Content */
+#myModal1 {
+  background-color: #fefefe;
+  /* width: 600px; */
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #888;
+  width: 100%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.aquarium {
+  height: 1600px;
+  width: 1600px;
+  background-color: aqua;
+  margin: 0;
+}
+
+.aquarium-card {
+   background: linear-gradient(
+    90deg,
+    rgba(50, 20, 233, 0.55) 1%,
+    rgba(10, 215, 235, 0.25) 58%,
+    rgba(67, 123, 232, 0.55) 99%
+  );
+  width: 1200px;
+  height: 506px;
+  /* align-items: center;
+  text-align: center;
+  justify-content: center; */
+  padding-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin: 20px auto;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.aquarium-1 {
+  padding-top: 0;
+  margin-top: 0;
+  width: 600px;
+  height: auto;
+  
+  
+  z-index: 0;
+}
+
+.aquarium-1 img {
+  float: left;
+}
+
+.aquarium-text {
+  float: right;
+  margin-right: 200px;
 }
 
 @media only screen and (max-width: 700px) {
