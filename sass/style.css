@@ -1,0 +1,434 @@
+body {
+  border: 15px solid #1900ff;
+  margin: auto;
+  background: linear-gradient(90deg, #93ec7f 16%, #46ba1d 46%, #a1eea1 85%);
+  max-width: 1600px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  /* align-self: center; */
+  /* display: block; */
+  /* justify-content: center; */
+}
+
+.fish-gallery {
+  justify-self: center;
+}
+
+header {
+  height: 30%;
+  color: white;
+  background: linear-gradient(90deg, #075504 1%, #16eb0a 46%, #0e9114 99%);
+  transition: all 2s;
+  padding-left: 5%;
+  text-transform: uppercase;
+}
+
+header:hover {
+  transform: scale(1.1);
+}
+
+.main-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(90deg, #3214e9 1%, #0ad7eb 58%, #437be8 99%);
+  text-transform: uppercase;
+  transition: 2s;
+  letter-spacing: 1px;
+}
+
+.main-nav li {
+  float: left;
+}
+
+.main-nav li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.932);
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.main-nav li a:hover:not(.active) {
+  text-decoration: space-between;
+  transform: scale(1.1);
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.main-nav li a.active {
+  background-color: #1132a1e7;
+}
+
+.main-nav li.right {
+  float: right;
+}
+
+.slideshow {
+  height: auto;
+  background: linear-gradient(90deg, #075504 1%, #16eb0a 46%, #0e9114 99%);
+  margin-bottom: 50px;
+}
+
+/* Responsive design for images */
+div.card {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+div.card img {
+  width: 100%;
+  height: auto;
+}
+
+div.description {
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery {
+  height: auto;
+  margin-top: 30px;
+  margin: 0 0 20px 20px;
+  padding: 10px 16px;
+  padding-left: 70px;
+  width: 100%;
+  border: 3px solid green;
+  /* justify-content: space-evenly; */
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: transparent;
+  width: 270px;
+  height: 350px;
+  perspective: 1000px;
+  padding: 10px;
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.25s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; */
+}
+
+.card-front {
+  background: linear-gradient(90deg, #3214e9 1%, #0ad7eb 58%, #437be8 99%);
+  color: rgba(4, 3, 27, 0.65);
+  font-weight: 600;
+}
+
+.card-back {
+  background: linear-gradient(90deg, #3214e9 1%, #0ad7eb 58%, #437be8 99%);
+  color: rgba(4, 3, 27, 0.65);
+  transform: rotateY(180deg);
+}
+
+.button {
+  background: linear-gradient(90deg, #160872 1%, #0ad7eb 58%, #2857b4 99%);
+  border-radius: 3px;
+  border: #050129;
+  margin-top: 50px;
+  color: darkblue;
+  font-weight: 700;
+  text-decoration: solid;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.75s;
+  /* z-index: -10; */
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.button:hover {
+  border-bottom: 1px solid darkgreen;
+  border-right: 1px solid darkgreen;
+  transform: scale(1.05);
+  box-shadow: darkgreen;
+}
+
+.fish {
+  background: linear-gradient(90deg, rgba(50, 20, 233, 0.95) 1%, rgba(10, 215, 235, 0.95) 58%, rgba(67, 123, 232, 0.95) 99%);
+  margin-top: 319px;
+  display: block;
+  cursor: pointer;
+  /*display:inline-block;*/
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+}
+
+.heading-fishes {
+  margin-left: 50px;
+  padding-left: 50px;
+}
+
+.video-angelfish {
+  background: linear-gradient(90deg, #075504 1%, #16eb0a 46%, #0e9114 99%);
+  height: 700px;
+}
+
+.slide {
+  width: 1600px;
+  height: 350px;
+}
+
+.zone-yellow {
+  height: 150px;
+  background: linear-gradient(90deg, #075504 1%, #16eb0a 46%, #0e9114 99%);
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+.card-slides {
+  height: 483px;
+  width: 1600px;
+}
+
+.slide {
+  height: 50vh;
+  width: 100%;
+}
+
+/* MODAL WINDOW FROM W3SHOOLS */
+/* The Modal (background) */
+.modal-card {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  align-self: center;
+  z-index: 4;
+  /* Sit on top */
+  margin: 100px 100px 100px 100px;
+  padding-top: 30px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 90vw;
+  /* Full width */
+  height: 500px;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: lightblue;
+  color: darkblue;
+  border-radius: 5px;
+}
+
+/* Modal Content */
+#myModal1 {
+  background-color: #fefefe;
+  /* width: 600px; */
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #888;
+  width: 100%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* .aquariums {
+  height: auto;
+  margin-top: 30px;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 16px;
+  padding-left: 70px;
+  width: auto;
+} */
+.aquarium {
+  height: 1650px;
+  width: 1600px;
+  background-color: #0059ff;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-self: center;
+  font-size: 85%;
+}
+
+.aquarium-card {
+  background: linear-gradient(90deg, rgba(50, 20, 233, 0.55) 1%, rgba(10, 215, 235, 0.25) 1%, rgba(67, 123, 232, 0.55) 15%);
+  width: 1540px;
+  height: 506px;
+  /* align-items: center;
+  text-align: center;
+  justify-content: center; */
+  padding: 10px 10px 10px 10px;
+  margin: 20px 20px 20px 20px;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.aquarium-1 {
+  padding-top: 0;
+  margin-top: 0;
+  width: 800px;
+  height: auto;
+  z-index: 2;
+}
+
+.aquarium-1 img {
+  float: left;
+}
+
+.aquarium-text {
+  float: right;
+  margin-right: 200px;
+}
+
+.video-angelfish {
+  width: 1349px;
+  height: auto;
+}
+
+.row {
+  background: linear-gradient(90deg, rgba(50, 20, 233, 0.55) 100%, rgba(10, 215, 235, 0.25) 100%, rgba(67, 123, 232, 0.55) 100%);
+  width: 1366px;
+  height: 506px;
+  /* align-items: center;
+  text-align: center;
+  justify-content: center; */
+  padding: 94px;
+  margin: 20px 20px 20px 20px;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    width: 24.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .gallery {
+    width: 49.99999%;
+  }
+}
+@media screen and (max-width: 700px) {
+  ul.main-nav li.right,
+ul.main-nav li {
+    float: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .gallery {
+    width: 100%;
+  }
+
+  .video-angelfish {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .gallery {
+    width: 100%;
+  }
+
+  .video-angelfish {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  body {
+    justify-content: center;
+    max-width: 1366px;
+  }
+
+  .aquarium {
+    height: auto;
+    width: 100vw;
+    padding: 97px;
+    margin: 20px 0px;
+    /* margin: 10px 10px 10px 10px; */
+  }
+
+  .aquarium-card {
+    width: 100vw;
+    /* margin: 10px 10px 10px 10px; */
+  }
+
+  .row {
+    width: 1600px;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .gallery {
+    width: 100vw;
+  }
+
+  .card {
+    width: 240px;
+  }
+
+  .slide {
+    width: 1349px;
+    height: 350px;
+  }
+
+  .video-angelfish {
+    width: 1349px;
+    height: auto;
+  }
+
+  #myVideo {
+    width: 100%;
+    height: 758px;
+  }
+}
+/* DOES NOT USE CODE */
+/* * {
+  box-sizing: border-box;
+} */
+
+/*# sourceMappingURL=style.css.map */
