@@ -1,0 +1,14 @@
+{
+  "name": "aquarium",
+  "version": "1.0.0",
+  "description": "Home page for aquarium",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Jonnyb83",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

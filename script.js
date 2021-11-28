@@ -1,6 +1,4 @@
 
-
-
 // Deze werkt niet
 // function myFunction() {
 //   var x = document.getElementById("fish").autoplay;
@@ -12,10 +10,10 @@ var images = [];	// Images Array
 var time = 4000;	// Time Between Switch
 	 
 // Image List
-images[0] = "aquarium-01.jpg";
-images[1] = "aquarium-02.jpg";
-images[2] = "aquarium-03.jpg";
-images[3] = "aquarium-06.jpg";
+images[0] = "./img/aquarium-01.jpg";
+images[1] = "./img/aquarium-02.jpg";
+images[2] = "./img/aquarium-03.jpg";
+images[3] = "./img/aquarium-06.jpg";
 
 // Change Image
 function changeImg(){
