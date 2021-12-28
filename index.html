@@ -13,7 +13,7 @@
 	</header>
 	<ul class="main-nav">
 		<li><a class="active" href="#Home">Home</a></li>
-		<li><a href="#Aquarium Fish">Aquarium fish</a></li>
+		<li class="li-left"><a href="#Aquarium Fish">Aquarium fish</a></li>
 		<li><a href="#Angelfish">Angelfish</a></li>
 		<li><a href="#Aquarium">Aquarium</a></li>
 		<li class="right"><a href="#Contact">Contact</a></li>
@@ -23,6 +23,15 @@
 			<img name="slide" class="slide">
 		</div>	
 	</section>
+	<section id="modal1" class="modal">
+		<!-- Modal content -->
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+			<img class="img-modal" src="./img/scalar-03.jpg" alt="scalare">
+			<h3>Pterophyllum Scalare</h3>
+			
+		  </div>
+	</section>
 
 	<section class="fish-gallery">
 		<h3 class="cichlides">Soorts of Tropical Aquarium Fish</h3>
@@ -31,6 +40,27 @@
 				<div class="flip-card pointer">
 					<div class="card-front">
 						<img src="./img/scalar-03.jpg" alt="scalare" width="600" height="400">
+						<div class="description">Pterophyllum Scalare</div>
+						<div class="description">Family: Cichlidae</div>
+					</div>
+			
+					<div class="card-back">
+						<h1>Pterophyllum Scalare</h1>
+						<p>Lenght 10-12cm</p>
+						<p>Temperature 24ºC-24ºC</p>
+						<p>Aquarium fith flowers</p>
+						<div>
+							<button id="btn1" class="button pointer">
+								About
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="flip-card pointer">
+					<div class="card-front">
+						<img src="./img/scalar-02.jpg" alt="scalare" width="600" height="400">
 						<div class="description">Pterophyllum Scalare</div>
 						<div class="description">Family: Cichlidae</div>
 					</div>
@@ -73,27 +103,6 @@
 				<div class="flip-card pointer">
 					<div class="card-front">
 						<img src="./img/cichlide.jpg" alt="scalare" width="600" height="400">
-						<div class="description">Pterophyllum Scalare</div>
-						<div class="description">Family: Cichlidae</div>
-					</div>
-			
-					<div class="card-back">
-						<h1>Pterophyllum Scalare</h1>
-						<p>Lenght 10-12cm</p>
-						<p>Temperature 24ºC-24ºC</p>
-						<p>Aquarium fith flowers</p>
-						<div>
-							<button id="btn1" class="button pointer">
-								About
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<div class="flip-card pointer">
-					<div class="card-front">
-						<img src="./img/scalar-02.jpg" alt="scalare" width="600" height="400">
 						<div class="description">Pterophyllum Scalare</div>
 						<div class="description">Family: Cichlidae</div>
 					</div>
@@ -347,7 +356,7 @@
 	<section class="angelfish">
 		<h3 class="cichlides">Angelfish</h3>
 		
-		<iframe id="myVideo" src="https://www.youtube.com/embed/IcGmYaOVAYM?rel;autoplay=1" frameborder="0"
+		<iframe id="myVideo" src="https://www.youtube.com/embed/IcGmYaOVAYM" frameborder="0"
 			allowfullscreen></iframe>
 
 	</section>
